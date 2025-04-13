@@ -15,6 +15,8 @@ import ContactPage from '@/pages/ContactPage';
 import { ThemeProvider } from "@/components/theme-provider"
 import UserAdmin from './pages/Admin/UserAdmin';
 import MedicineAdmin from './pages/Admin/SellMedicinesAdmin';
+import Dashboard from './pages/Admin/Dashboard';
+import AdminContactPage from "./pages/Admin/ContactPage"
 
 function App() {
   return (
@@ -35,7 +37,10 @@ function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="admin/users" element={<UserAdmin/>}/>
             <Route path='admin/sell-medicine' element={<MedicineAdmin/>}/>
+            <Route path='admin/dashboard' element={<Dashboard/>}/>
+            <Route path='admin/contact' element={<AdminContactPage/>}/>
             <Route path="notifications/:id" element={<NotificationsPage />} />
+
           </Route>
         </Routes>
       </Router>
